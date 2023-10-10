@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+
+html,
+body {
+  background: #1f1b1b;
+  height: 1952px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+section {
+  color: #ffffff;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  width: 1920px;
+  background-size: 100% 100%;
+}
+
+.hero {
+  max-height: 892px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: url(./img/section0/Hue_Saturation.png);
+}
+
+.product-pic img {
+  position: relative;
+  z-index: 3;
+}
+.product {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 4;
+}
+
+.product-glow {
+  background: url(./img/section0/glow1.png);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  mix-blend-mode: screen;
+  z-index: 3;
+}
+
+.product-title {
+  position: relative;
+  font-family: "Roboto Condensed";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 44px;
+  text-align: center;
+  bottom: 24px;
+}
+.product-subtitle {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 8px 0;
+  text-align: center;
+  white-space: nowrap;
+  margin-bottom: 50px;
+}
+.person {
+  position: relative;
+  width: 577px;
+  height: 876px;
+  z-index: 1;
+}
+.person-woman img {
+  width: 577px;
+  height: 876px;
+  position: absolute;
+  left: 0px;
+}
+
+.person-man img {
+  position: absolute;
+  width: 678px;
+  height: 876px;
+  right: 0px;
+}
+
+.logo {
+  width: 376px;
+  height: 348px;
+  z-index: 3;
+}
+
+.promo {
+  position: relative;
+  max-width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  background-size: cover;
+}
+
+.dark-glow {
+  height: fit-content;
+  position: absolute;
+  z-index: 0;
+}
+.dark-glow img {
+  display: block;
+}
+.dark-glow_left {
+  left: 0;
+}
+.dark-glow_right {
+  right: 0;
+}
+.glow_bottom {
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+}
+.glow_bottom img {
+  width: 100%;
+}
+.promo-card {
+  background-image: url(./img/section1/background_wall.png);
+  height: calc(1952px - 892px);
+}
+.card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.card-img {
+  position: relative;
+  margin-right: 200px;
+}
+.card-img img {
+  position: relative;
+  z-index: 2;
+}
+.card-img-glow {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #416df4;
+  mix-blend-mode: lighten;
+  opacity: 0.2;
+  border: 1px solid #000000;
+  filter: blur(100px);
+  z-index: 1;
+}
+.card-name {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  color: #416df4;
+  letter-spacing: 1.4px;
+  padding: 50px 0 45px 0;
+}
+
+.column {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.column-name {
+  width: 140px;
+  height: 23px;
+  color: #671d00;
+  background: rgba(0, 0, 0, 0.55);
+  border: 1px solid rgba(103, 29, 0, 0.48);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  padding: 4px 8px;
+  margin: 0 0 4px 20px;
+  white-space: nowrap;
+}
+
+.row-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 1px;
+  width: 632px;
+  height: 74px;
+  background: rgba(0, 0, 0, 0.55);
+  border: 1px solid rgba(103, 29, 0, 0.48);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  margin: 2px;
+}
+
+.row-name .logo {
+  width: 64px;
+  height: 64px;
+}
+
+.row-item-content {
+  height: 64px;
+  display: flex;
+  align-items: center;
+}
+
+.row-item-content .row-item-content__name {
+  width: 220px;
+  padding-right: 50px;
+  margin-right: 20px;
+}
+
+.row-item-content .row-item-content__info {
+  width: 140px;
+  text-align: center;
+  padding: 0 auto;
+}
+
+.row-item-content .row-item-content__name span {
+  width: 150px;
+  background: #ffffff;
+}
+
+.byu-block {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: self-end;
+  justify-content: flex-end;
+  width: 450px;
+  height: 350px;
+}
+
+.byu-info-img {
+  position: absolute;
+  left: 0;
+  top: 36px;
+}
+
+.price {
+  width: 167px;
+  height: 70px;
+  font-family: "Roboto";
+  font-size: 50px;
+  line-height: 59px;
+  color: #ffffff;
+}
+
+.buy {
+  background: #fcff00;
+  border-radius: 7px;
+  width: 180px;
+  height: 40px;
+  margin-bottom: 50px;
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #000000;
+}
